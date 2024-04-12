@@ -1,0 +1,8 @@
+# compute-gop --phone-map=exp/gop_test_api/phone-to-pure-phone.int /home/rau047/libreespeech2/0013_librispeech_v1_chain/exp/chain_cleaned/tdnn_1d_sp/final.mdl "ark,t:gunzip -c exp/gop_test_api/ali-phone.1.gz|" ark:exp/probs_test_api/output.1.ark ark,t:exp/gop_test_api/gop.1.txt ark,t:exp/gop_test_api/phonefeat.1.txt 
+# Started at Fri Apr 12 19:30:42 IST 2024
+#
+compute-gop --phone-map=exp/gop_test_api/phone-to-pure-phone.int /home/rau047/libreespeech2/0013_librispeech_v1_chain/exp/chain_cleaned/tdnn_1d_sp/final.mdl 'ark,t:gunzip -c exp/gop_test_api/ali-phone.1.gz|' ark:exp/probs_test_api/output.1.ark ark,t:exp/gop_test_api/gop.1.txt ark,t:exp/gop_test_api/phonefeat.1.txt 
+WARNING (compute-gop[5.5.1056~1-f6f4c]:main():compute-gop.cc:198) The frame numbers of alignment and prob are not equal.
+LOG (compute-gop[5.5.1056~1-f6f4c]:main():compute-gop.cc:264) Processed 1 prob matrices.
+# Accounting: time=0 threads=1
+# Ended (code 0) at Fri Apr 12 19:30:42 IST 2024, elapsed time 0 seconds

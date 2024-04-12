@@ -1,0 +1,10 @@
+# compute-mfcc-feats --write-utt2dur=ark,t:exp/make_hires/test_api/utt2dur.1 --verbose=2 --config=conf//mfcc_hires.conf scp,p:exp/make_hires/test_api/wav_test_api.1.scp ark:- | copy-feats --write-num-frames=ark,t:exp/make_hires/test_api/utt2num_frames.1 --compress=true ark:- ark,scp:/home/rau047/kaldi/egs/gop_speechocean762/s5/data/test_api/data/raw_mfcc_test_api.1.ark,/home/rau047/kaldi/egs/gop_speechocean762/s5/data/test_api/data/raw_mfcc_test_api.1.scp 
+# Started at Fri Apr 12 19:30:39 IST 2024
+#
+copy-feats --write-num-frames=ark,t:exp/make_hires/test_api/utt2num_frames.1 --compress=true ark:- ark,scp:/home/rau047/kaldi/egs/gop_speechocean762/s5/data/test_api/data/raw_mfcc_test_api.1.ark,/home/rau047/kaldi/egs/gop_speechocean762/s5/data/test_api/data/raw_mfcc_test_api.1.scp 
+compute-mfcc-feats --write-utt2dur=ark,t:exp/make_hires/test_api/utt2dur.1 --verbose=2 --config=conf//mfcc_hires.conf scp,p:exp/make_hires/test_api/wav_test_api.1.scp ark:- 
+VLOG[2] (compute-mfcc-feats[5.5.1056~1-f6f4c]:main():compute-mfcc-feats.cc:182) Processed features for key 1
+LOG (compute-mfcc-feats[5.5.1056~1-f6f4c]:main():compute-mfcc-feats.cc:185)  Done 1 out of 1 utterances.
+LOG (copy-feats[5.5.1056~1-f6f4c]:main():copy-feats.cc:143) Copied 1 feature matrices.
+# Accounting: time=0 threads=1
+# Ended (code 0) at Fri Apr 12 19:30:39 IST 2024, elapsed time 0 seconds

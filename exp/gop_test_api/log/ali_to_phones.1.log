@@ -1,0 +1,7 @@
+# ali-to-phones --per-frame=true /home/rau047/libreespeech2/0013_librispeech_v1_chain/exp/chain_cleaned/tdnn_1d_sp/final.mdl "ark,t:gunzip -c exp/gop_test_api/ali.1.gz|" "ark,t:|gzip -c >exp/gop_test_api/ali-phone.1.gz" 
+# Started at Fri Apr 12 19:30:42 IST 2024
+#
+ali-to-phones --per-frame=true /home/rau047/libreespeech2/0013_librispeech_v1_chain/exp/chain_cleaned/tdnn_1d_sp/final.mdl 'ark,t:gunzip -c exp/gop_test_api/ali.1.gz|' 'ark,t:|gzip -c >exp/gop_test_api/ali-phone.1.gz' 
+LOG (ali-to-phones[5.5.1056~1-f6f4c]:main():ali-to-phones.cc:134) Done 1 utterances.
+# Accounting: time=0 threads=1
+# Ended (code 0) at Fri Apr 12 19:30:42 IST 2024, elapsed time 0 seconds

@@ -1,0 +1,16 @@
+# nnet3-compute --use-gpu=no --online-ivectors=scp:exp/nnet3_cleaned/ivectors_test_api/ivector_online.scp --online-ivector-period=10 --frames-per-chunk=50 --extra-left-context=0 --extra-right-context=0 --extra-left-context-initial=-1 --extra-right-context-final=-1 /home/rau047/libreespeech2/0013_librispeech_v1_chain/exp/chain_cleaned/tdnn_1d_sp/final.mdl "ark,s,cs:apply-cmvn --norm-means=false --norm-vars=false --utt2spk=ark:data/test_api/split1/1/utt2spk scp:data/test_api/split1/1/cmvn.scp scp:data/test_api/split1/1/feats.scp ark:- |" "ark:| copy-feats --compress=false ark:- ark,scp:exp/probs_test_api/output.1.ark,exp/probs_test_api/output.1.scp" 
+# Started at Fri Apr 12 19:30:39 IST 2024
+#
+nnet3-compute --use-gpu=no --online-ivectors=scp:exp/nnet3_cleaned/ivectors_test_api/ivector_online.scp --online-ivector-period=10 --frames-per-chunk=50 --extra-left-context=0 --extra-right-context=0 --extra-left-context-initial=-1 --extra-right-context-final=-1 /home/rau047/libreespeech2/0013_librispeech_v1_chain/exp/chain_cleaned/tdnn_1d_sp/final.mdl 'ark,s,cs:apply-cmvn --norm-means=false --norm-vars=false --utt2spk=ark:data/test_api/split1/1/utt2spk scp:data/test_api/split1/1/cmvn.scp scp:data/test_api/split1/1/feats.scp ark:- |' 'ark:| copy-feats --compress=false ark:- ark,scp:exp/probs_test_api/output.1.ark,exp/probs_test_api/output.1.scp' 
+LOG (nnet3-compute[5.5.1056~1-f6f4c]:RemoveOrphanNodes():nnet-nnet.cc:948) Removed 1 orphan nodes.
+LOG (nnet3-compute[5.5.1056~1-f6f4c]:RemoveOrphanComponents():nnet-nnet.cc:847) Removing 2 orphan components.
+LOG (nnet3-compute[5.5.1056~1-f6f4c]:Collapse():nnet-utils.cc:1488) Added 1 components, removed 2
+copy-feats --compress=false ark:- ark,scp:exp/probs_test_api/output.1.ark,exp/probs_test_api/output.1.scp 
+apply-cmvn --norm-means=false --norm-vars=false --utt2spk=ark:data/test_api/split1/1/utt2spk scp:data/test_api/split1/1/cmvn.scp scp:data/test_api/split1/1/feats.scp ark:- 
+LOG (apply-cmvn[5.5.1056~1-f6f4c]:main():apply-cmvn.cc:81) Copied 1 utterances.
+LOG (nnet3-compute[5.5.1056~1-f6f4c]:main():nnet3-compute.cc:189) Time taken 0.249066s: real-time factor assuming 100 frames/sec is 0.408305
+LOG (nnet3-compute[5.5.1056~1-f6f4c]:main():nnet3-compute.cc:192) Done 1 utterances, failed for 0
+LOG (copy-feats[5.5.1056~1-f6f4c]:main():copy-feats.cc:143) Copied 1 feature matrices.
+LOG (nnet3-compute[5.5.1056~1-f6f4c]:~CachingOptimizingCompiler():nnet-optimize.cc:710) 0.0294 seconds taken in nnet3 compilation total (breakdown: 0.0226 compilation, 0.00464 optimization, 0 shortcut expansion, 0.000762 checking, 3.1e-06 computing indexes, 0.00148 misc.) + 0 I/O.
+# Accounting: time=0 threads=1
+# Ended (code 0) at Fri Apr 12 19:30:39 IST 2024, elapsed time 0 seconds
