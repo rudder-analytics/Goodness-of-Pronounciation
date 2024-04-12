@@ -21,7 +21,7 @@ Download Librispeech model: https://kaldi-asr.org/models/m13
 
 # How to run the script:
 
-python main.py <audio_file_path> <text>
+python main.py audio_file_path text
 
 eg. python main.py MACHINE.wav MACHINE
 
