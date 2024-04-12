@@ -25,6 +25,7 @@ python main.py audio_file_path text
 
 eg. python main.py MACHINE.wav MACHINE
 
+# Output
 {  
 'phonemes': 'M AH SH IY N', 'avg_phone_prob_score': 0.18792639890064897, 'avg_phone_log_prob_score': -1.16205264  
 }  
